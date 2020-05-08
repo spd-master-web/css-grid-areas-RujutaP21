@@ -1,3 +1,43 @@
 * {
   box-sizing: border-box;
 }
+
+body{
+  margin: 0;
+  padding: 10em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+  display: grid;
+  height: 800px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-gap: 1em;
+}
+
+.grid-item{
+  color: white;
+  margin: 0;
+  text-align: center;
+  /* height: 200px; */
+}
+
+.item1{
+  grid-column: span 3;
+  background-color: plum;
+}
+
+.item2{
+  grid-column: span 2;
+  background-color: purple;
+}
+
+.item3{
+  background-color: blue;
+}
+
+.item4{
+  grid-column: span 3;
+  background-color: pink;
+}
